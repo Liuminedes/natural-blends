@@ -64,9 +64,6 @@ export default function Menu() {
         <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>
             <h1 className="text-2xl font-semibold">Menú</h1>
-            <p className="mt-1 text-sm text-nb-ink/70">
-              Explora como marketplace: busca, filtra y pide en 1 clic. 🛍️
-            </p>
           </div>
 
           <div className="text-sm text-nb-ink/60">

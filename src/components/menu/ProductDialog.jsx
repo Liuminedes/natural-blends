@@ -78,10 +78,6 @@ export default function ProductDialog({ open, onOpenChange, product }) {
               Pedir por WhatsApp
             </Button>
           </a>
-
-          <p className="text-xs text-nb-ink/60">
-            Tip: agrega una nota en WhatsApp (sin azúcar, extra topping, etc.) ✅
-          </p>
         </div>
       </DialogContent>
     </Dialog>
