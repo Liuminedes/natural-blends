@@ -5,7 +5,6 @@ import { formatCOP } from "../../lib/format";
 import { buildSingleProductUrl } from "../../lib/whatsapp";
 import { Leaf, Flame, Sparkles, ArrowRight } from "lucide-react";
 
-// ✅ Nuevo componente
 import SmartImage from "../common/SmartImage";
 
 function CategoryBadge({ category }) {
@@ -55,8 +54,7 @@ export default function ProductCard({ product, onOpen }) {
 
   return (
     <Card className="group overflow-hidden transition hover:shadow-md">
-      {/* Imagen / Banner */}
-      <div className="relative h-40 w-full">
+      <div className="relative h-44 w-full">
         {hasImg ? (
           <SmartImage
             src={product.img}
@@ -68,9 +66,9 @@ export default function ProductCard({ product, onOpen }) {
           <FallbackBanner name={product.name} />
         )}
 
-        {/* Price pill */}
+        {/* ✅ Precio más grande */}
         <div className="absolute right-3 top-3">
-          <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-nb-burgundy border">
+          <span className="rounded-full bg-white/90 px-4 py-2 text-sm font-extrabold text-nb-burgundy border shadow-sm">
             {priceLabel}
           </span>
         </div>
@@ -97,11 +95,7 @@ export default function ProductCard({ product, onOpen }) {
         </div>
 
         <div className="grid grid-cols-2 gap-2 pt-1">
-          <Button
-            variant="outline"
-            className="w-full rounded-xl"
-            onClick={() => onOpen(product)}
-          >
+          <Button variant="outline" className="w-full rounded-xl" onClick={() => onOpen(product)}>
             Ver detalles
           </Button>
 
