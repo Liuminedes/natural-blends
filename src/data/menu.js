@@ -1,3 +1,69 @@
+// src/data/menu.js
+
+// ✅ Imports (Vite empaqueta estas imágenes para producción)
+import bowlSalmon from "@/assets/products/bowl-salmon.png";
+import bowlFalafel from "@/assets/products/bowl-falafel.png";
+import bowlArrozPollo from "@/assets/products/bowl-arroz-pollo.png";
+import bowlDelRancho from "@/assets/products/bowl-del-rancho.png";
+import bowlVeggie from "@/assets/products/bowl-veggie.png";
+import bowlPastaCerdo from "@/assets/products/bowl-pasta-cerdo.png";
+
+import ensaladaFesta from "@/assets/products/ensalada-festa.png";
+import ensaladaAtun from "@/assets/products/ensalada-atun.png";
+import ensaladaPolloPesto from "@/assets/products/ensalada-pollo-pesto.png";
+import ensaladaVeggie from "@/assets/products/ensalada-veggie.png";
+import ensaladaHawaiana from "@/assets/products/ensalada-hawaiana.png";
+import ensaladaPollo from "@/assets/products/ensalada-pollo.png";
+import ensaladaPolloFrijol from "@/assets/products/ensalada-pollo-frijol.png";
+
+import sandwichPolloChampi from "@/assets/products/sandwich-pollo-y-champi.png";
+import sandwichChorizoArtesanal from "@/assets/products/sandwich-chorizo-artesanal.png";
+import sandwichCerdoAlHorno from "@/assets/products/sandwich-cerdo-al-horno.png";
+import sandwichJamonDePavo from "@/assets/products/sandwich-jamon-de-pavo.png";
+import sandwichLulito from "@/assets/products/sandwich-lulito.png";
+import sandwichAtunYHuevo from "@/assets/products/sandwich-atun-y-huevo.png";
+import sandwichCaprese from "@/assets/products/sandwich-caprese.png";
+import sandwichMixVegetales from "@/assets/products/sandwich-mix-vegetales.png";
+
+import hamburguesaPollo from "@/assets/products/hamburguesa-pollo.png";
+import hamburguesaVeggie from "@/assets/products/hamburguesa-veggie.png";
+
+import batidoFrutosBlue from "@/assets/products/batido-frutos-blue.png";
+import batidoAmarilloMix from "@/assets/products/batido-amarillo-mix.png";
+import batidoMaracuyada from "@/assets/products/batido-maracuyada.png";
+import batidoLulada from "@/assets/products/batido-lulada.png";
+import batidoCocoRed from "@/assets/products/batido-coco-red.png";
+import batidoLycheeIsland from "@/assets/products/batido-lychee-island.png";
+import batidoChontacoco from "@/assets/products/batido-chontacoco.png";
+import batidoLimonadaDeCoco from "@/assets/products/batido-limonada-de-coco.png";
+
+import bebidaFrutosRojos from "@/assets/products/bebida-frutos-rojos.png";
+import bebidaFrutosAmarillos from "@/assets/products/bebida-frutos-amarillos.png";
+import bebidaNaranjaRose from "@/assets/products/bebida-naranja-rose.png";
+import bebidaNaranjaPassion from "@/assets/products/bebida-naranja-passion.png";
+import bebidaTropical from "@/assets/products/bebida-tropical.png";
+import bebidaSpycitrus from "@/assets/products/bebida-spycitrus.png";
+import bebidaAtardecer from "@/assets/products/bebida-atardecer.png";
+import bebidaSuperLight from "@/assets/products/bebida-super-light.png";
+import bebidaAcaiMix from "@/assets/products/bebida-acai-mix.png";
+import bebidaBiche from "@/assets/products/bebida-biche.png";
+
+import sodaMora from "@/assets/products/soda-mora.png";
+import sodaLulo from "@/assets/products/soda-lulo.png";
+
+import cafeFrappe from "@/assets/products/cafe-frappe.png";
+import chaiCoffee from "@/assets/products/chai-coffee.png";
+import cafhelado from "@/assets/products/cafhelado.png";
+import icedLatte from "@/assets/products/iced-latte.png";
+
+import proteinaRecoverFit from "@/assets/products/proteina-recover-fit.png";
+import proteinaPassionWhey from "@/assets/products/proteina-passion-whey.png";
+import proteinaManipower from "@/assets/products/proteina-manipower.png";
+
+import bowlAcai from "@/assets/products/bowl-acai.png";
+import bowlRojo from "@/assets/products/bowl-rojo.png";
+import bowlAmarillo from "@/assets/products/bowl-amarillo.png";
+
 export const CATEGORIES = [
   { id: "bowls", name: "Natural Bowls", color: "nb.mint" },
   { id: "ensaladas", name: "Ensaladas", color: "nb.sun" },
@@ -18,7 +84,7 @@ export const MENU = [
     desc: "Salmón a la plancha, arroz integral con vegetales salteados (zanahoria, puerro, pimentón, brócoli, champiñones) & vinagreta de maracuyá.",
     tags: ["Proteína"],
     isVeggie: false,
-    img: "/src/assets/products/bowl-salmon.png",
+    img: bowlSalmon,
   },
   {
     id: "bowl-falafel",
@@ -28,7 +94,7 @@ export const MENU = [
     desc: "Falafel horneados, vegetales encurtidos (pepino, cebolla & repollo), tomate, maíz, sobre quinoa fría & salsa de ajo.",
     tags: ["Veggie"],
     isVeggie: true,
-    img: "/src/assets/products/bowl-falafel.png",
+    img: bowlFalafel,
   },
   {
     id: "arroz-pollo",
@@ -38,7 +104,7 @@ export const MENU = [
     desc: "Arroz integral con pechuga de pollo desmechada & vegetales salteados (zanahoria, puerro, pimentón, brócoli & apio) en teriyaki.",
     tags: ["Proteína"],
     isVeggie: false,
-    img: "/src/assets/products/bowl-arroz-pollo.png",
+    img: bowlArrozPollo,
   },
   {
     id: "del-rancho",
@@ -48,7 +114,7 @@ export const MENU = [
     desc: "Chorizo artesanal, frijol caraota, arroz integral, guacamole, pico e’ gallo, sour cream, nachos, lechuga & salsa mexicana de tomates.",
     tags: ["Top"],
     isVeggie: false,
-    img: "/src/assets/products/bowl-del-rancho.png",
+    img: bowlDelRancho,
   },
   {
     id: "bowl-veggie",
@@ -58,7 +124,7 @@ export const MENU = [
     desc: "Arroz integral con carne vegetal, frijol caraota & vegetales salteados (zanahoria, puerro, pimentón, brócoli & apio) en teriyaki.",
     tags: ["Veggie"],
     isVeggie: true,
-    img: "/src/assets/products/bowl-veggie.png",
+    img: bowlVeggie,
   },
   {
     id: "pasta-cerdo",
@@ -68,7 +134,7 @@ export const MENU = [
     desc: "Pasta corta con cerdo desmechado & vegetales salteados (zanahoria, puerro, pimentón, brócoli & apio) en teriyaki.",
     tags: ["Proteína"],
     isVeggie: false,
-    img: "/src/assets/products/bowl-pasta-cerdo.png",
+    img: bowlPastaCerdo,
   },
 
   // ===================== ENSALADAS =====================
@@ -80,7 +146,7 @@ export const MENU = [
     desc: "Cerdo desmechado, fresas, lechuga, dip de pimentón, crema de queso, crutones, zanahoria, espinaca & salsa de ajo.",
     tags: ["Top"],
     isVeggie: false,
-    img: "/src/assets/products/ensalada-festa.png",
+    img: ensaladaFesta,
   },
   {
     id: "ens-atun",
@@ -90,7 +156,7 @@ export const MENU = [
     desc: "Atún en lomitos, pasta corta, maíz, mozzarella, aceitunas kalamata, lechuga, tomate cherry & salsa de ajo.",
     tags: ["Proteína"],
     isVeggie: false,
-    img: "/src/assets/products/ensalada-atun.png",
+    img: ensaladaAtun,
   },
   {
     id: "ens-pollo-pesto",
@@ -100,7 +166,7 @@ export const MENU = [
     desc: "Pechuga desmechada, pasta corta, lechuga, aceitunas kalamata, albahaca, mozzarella, tomates cherry & champiñones salteados, espinaca, salsa de albahaca.",
     tags: ["Top"],
     isVeggie: false,
-    img: "/src/assets/products/ensalada-pollo-pesto.png",
+    img: ensaladaPolloPesto,
   },
   {
     id: "ens-veggie",
@@ -110,7 +176,7 @@ export const MENU = [
     desc: "Carne vegetal, champiñones, pepino agridulce, tomate, zanahoria, espinaca, queso mozzarella, lechuga & crutones.",
     tags: ["Veggie"],
     isVeggie: true,
-    img: "/src/assets/products/ensalada-veggie.png",
+    img: ensaladaVeggie,
   },
   {
     id: "ens-hawaiana",
@@ -120,7 +186,7 @@ export const MENU = [
     desc: "Pechuga desmechada, jamón, piña, cebolla encurtida, crutones, mozzarella, pepino agridulce, lechuga, espinaca & salsa de ajo.",
     tags: ["Top"],
     isVeggie: false,
-    img: "/src/assets/products/ensalada-hawaiana.png",
+    img: ensaladaHawaiana,
   },
   {
     id: "ens-pollo",
@@ -130,7 +196,7 @@ export const MENU = [
     desc: "Pechuga desmechada, tomate, champiñones, mozzarella, espinaca, pepino agridulce, crutones, lechuga, zanahoria & salsa de ajo.",
     tags: ["Proteína"],
     isVeggie: false,
-    img: "/src/assets/products/ensalada-pollo.png",
+    img: ensaladaPollo,
   },
   {
     id: "ens-pollo-frijol",
@@ -140,7 +206,7 @@ export const MENU = [
     desc: "Pechuga desmechada, tomate, maíz, frijol caraota, mozzarella, nachos, lechuga & salsa de ajo + jalapeños.",
     tags: ["Proteína"],
     isVeggie: false,
-    img: "/src/assets/products/ensalada-pollo-frijol.png",
+    img: ensaladaPolloFrijol,
   },
 
   // ===================== SÁNDWICHES =====================
@@ -152,7 +218,7 @@ export const MENU = [
     desc: "Pan ciabatta, mozzarella, lechuga, tomate, pepino agridulce & salsas de la casa.",
     tags: ["Top"],
     isVeggie: false,
-    img: "/src/assets/products/sandwich-pollo-y-champi.png",
+    img: sandwichPolloChampi,
   },
   {
     id: "sand-chorizo",
@@ -162,7 +228,7 @@ export const MENU = [
     desc: "Pan ciabatta, mozzarella, lechuga, tomate, pepino agridulce & salsas de la casa.",
     tags: [],
     isVeggie: false,
-    img: "/src/assets/products/sandwich-chorizo-artesanal.png",
+    img: sandwichChorizoArtesanal,
   },
   {
     id: "sand-cerdo-horno",
@@ -172,7 +238,7 @@ export const MENU = [
     desc: "Pan ciabatta, mozzarella, lechuga, tomate, pepino agridulce & salsas de la casa.",
     tags: [],
     isVeggie: false,
-    img: "/src/assets/products/sandwich-cerdo-al-horno.png",
+    img: sandwichCerdoAlHorno,
   },
   {
     id: "sand-jamon-pavo",
@@ -182,7 +248,7 @@ export const MENU = [
     desc: "Pan ciabatta, mozzarella, lechuga, tomate, pepino agridulce & salsas de la casa.",
     tags: [],
     isVeggie: false,
-    img: "/src/assets/products/sandwich-jamon-de-pavo.png",
+    img: sandwichJamonDePavo,
   },
   {
     id: "sand-lulito",
@@ -192,7 +258,7 @@ export const MENU = [
     desc: "Medio pan ciabatta, jamón pavo, queso, reducción de lulo, lechuga & salsita de la casa.",
     tags: ["Mini"],
     isVeggie: false,
-    img: "/src/assets/products/sandwich-lulito.png",
+    img: sandwichLulito,
   },
   {
     id: "sand-atun-huevo",
@@ -202,7 +268,7 @@ export const MENU = [
     desc: "Pan ciabatta, mozzarella, lechuga, tomate, pepino agridulce & salsas de la casa.",
     tags: ["Proteína"],
     isVeggie: false,
-    img: "/src/assets/products/sandwich-atun-y-huevo.png",
+    img: sandwichAtunYHuevo,
   },
   {
     id: "sand-caprese",
@@ -212,7 +278,7 @@ export const MENU = [
     desc: "Queso mozzarella, albahaca fresca, tomate & vinagreta de albahaca.",
     tags: ["Veggie"],
     isVeggie: true,
-    img: "/src/assets/products/sandwich-caprese.png",
+    img: sandwichCaprese,
   },
   {
     id: "sand-mix-vegetales",
@@ -222,7 +288,7 @@ export const MENU = [
     desc: "Zanahoria, aceitunas, champiñones, pepino & pimentón agridulce, tomate, lechuga.",
     tags: ["Veggie"],
     isVeggie: true,
-    img: "/src/assets/products/sandwich-mix-vegetales.png",
+    img: sandwichMixVegetales,
   },
 
   // ===================== HAMBURGUESAS =====================
@@ -234,7 +300,7 @@ export const MENU = [
     desc: "Hamburguesa de pechuga de pollo, pan brioche, queso, piña caramelizada, cebolla encurtida, lechuga & salsa de albahaca.",
     tags: ["Top"],
     isVeggie: false,
-    img: "/src/assets/products/hamburguesa-pollo.png",
+    img: hamburguesaPollo,
   },
   {
     id: "hamb-veggie",
@@ -244,7 +310,7 @@ export const MENU = [
     desc: "Hamburguesa vegetariana, pan brioche, queso, piña caramelizada, cebolla encurtida, lechuga & salsa de albahaca.",
     tags: ["Veggie"],
     isVeggie: true,
-    img: "/src/assets/products/hamburguesa-veggie.png",
+    img: hamburguesaVeggie,
   },
 
   // ===================== BATIDOS =====================
@@ -256,7 +322,7 @@ export const MENU = [
     desc: "Mora, fresa, uva & helado.",
     tags: ["Cremoso"],
     isVeggie: true,
-    img: "/src/assets/products/batido-frutos-blue.png",
+    img: batidoFrutosBlue,
   },
   {
     id: "bat-amarillo-mix",
@@ -266,7 +332,7 @@ export const MENU = [
     desc: "Banano, mango, papaya & helado.",
     tags: ["Cremoso"],
     isVeggie: true,
-    img: "/src/assets/products/batido-amarillo-mix.png",
+    img: batidoAmarilloMix,
   },
   {
     id: "bat-maracuyada",
@@ -276,7 +342,7 @@ export const MENU = [
     desc: "Maracuyá & leche condensada.",
     tags: ["Cremoso"],
     isVeggie: true,
-    img: "/src/assets/products/batido-maracuyada.png",
+    img: batidoMaracuyada,
   },
   {
     id: "bat-lulada",
@@ -286,7 +352,7 @@ export const MENU = [
     desc: "Lulo, piña & leche condensada.",
     tags: ["Cremoso"],
     isVeggie: true,
-    img: "/src/assets/products/batido-lulada.png",
+    img: batidoLulada,
   },
   {
     id: "bat-coco-red",
@@ -296,7 +362,7 @@ export const MENU = [
     desc: "Mora, banano & crema de coco.",
     tags: ["Cremoso"],
     isVeggie: true,
-    img: "/src/assets/products/batido-coco-red.png",
+    img: batidoCocoRed,
   },
   {
     id: "bat-lychee",
@@ -306,7 +372,7 @@ export const MENU = [
     desc: "Lychees & crema de coco.",
     tags: ["Cremoso"],
     isVeggie: true,
-    img: "/src/assets/products/batido-lychee-island.png",
+    img: batidoLycheeIsland,
   },
   {
     id: "bat-chontacoco",
@@ -316,7 +382,7 @@ export const MENU = [
     desc: "Chontaduro & crema de coco.",
     tags: ["Cremoso"],
     isVeggie: true,
-    img: "/src/assets/products/batido-chontacoco.png",
+    img: batidoChontacoco,
   },
   {
     id: "bat-limonada-coco",
@@ -326,7 +392,7 @@ export const MENU = [
     desc: "Limón & crema de coco.",
     tags: ["Cremoso"],
     isVeggie: true,
-    img: "/src/assets/products/batido-limonada-de-coco.png",
+    img: batidoLimonadaDeCoco,
   },
 
   // ===================== BEBIDAS & CAFÉ =====================
@@ -338,7 +404,7 @@ export const MENU = [
     desc: "Fresa, mora & cereza.",
     tags: ["Frutal"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-frutos-rojos.png",
+    img: bebidaFrutosRojos,
   },
   {
     id: "frut-amarillos",
@@ -348,7 +414,7 @@ export const MENU = [
     desc: "Banano, mango & papaya.",
     tags: ["Frutal"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-frutos-amarillos.png",
+    img: bebidaFrutosAmarillos,
   },
   {
     id: "frut-naranja-rose",
@@ -358,7 +424,7 @@ export const MENU = [
     desc: "Naranja & fresa.",
     tags: ["Frutal"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-naranja-rose.png",
+    img: bebidaNaranjaRose,
   },
   {
     id: "frut-naranja-passion",
@@ -368,7 +434,7 @@ export const MENU = [
     desc: "Maracuyá & naranja.",
     tags: ["Frutal"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-naranja-passion.png",
+    img: bebidaNaranjaPassion,
   },
   {
     id: "frut-tropical",
@@ -378,7 +444,7 @@ export const MENU = [
     desc: "Banano, fresa, naranja & piña.",
     tags: ["Frutal"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-tropical.png",
+    img: bebidaTropical,
   },
   {
     id: "frut-spycitrus",
@@ -388,7 +454,7 @@ export const MENU = [
     desc: "Naranja, limón, piña & jengibre.",
     tags: ["Frutal"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-spycitrus.png",
+    img: bebidaSpycitrus,
   },
   {
     id: "frut-atardecer",
@@ -398,7 +464,7 @@ export const MENU = [
     desc: "Maracuyá, mango & zanahoria.",
     tags: ["Frutal"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-atardecer.png",
+    img: bebidaAtardecer,
   },
   {
     id: "frut-super-light",
@@ -408,7 +474,7 @@ export const MENU = [
     desc: "Piña, limón, apio, espinaca & pepino.",
     tags: ["Light"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-super-light.png",
+    img: bebidaSuperLight,
   },
   {
     id: "frut-acai-mix",
@@ -418,7 +484,7 @@ export const MENU = [
     desc: "Açai, banano & mora.",
     tags: ["Top"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-acai-mix.png",
+    img: bebidaAcaiMix,
   },
   {
     id: "frut-biche",
@@ -428,7 +494,7 @@ export const MENU = [
     desc: "Mango biche, limón, Tajín & sal.",
     tags: ["Refrescante"],
     isVeggie: true,
-    img: "/src/assets/products/bebida-biche.png",
+    img: bebidaBiche,
   },
   {
     id: "soda-mora",
@@ -438,7 +504,7 @@ export const MENU = [
     desc: "Con sirope de mora & jengibre.",
     tags: ["Soda"],
     isVeggie: true,
-    img: "/src/assets/products/soda-mora.png",
+    img: sodaMora,
   },
   {
     id: "soda-lulo",
@@ -448,7 +514,7 @@ export const MENU = [
     desc: "Con reducción de lulo.",
     tags: ["Soda"],
     isVeggie: true,
-    img: "/src/assets/products/soda-lulo.png",
+    img: sodaLulo,
   },
   {
     id: "cafe-frappe",
@@ -458,7 +524,7 @@ export const MENU = [
     desc: "Café, leche & amor.",
     tags: ["Café frío"],
     isVeggie: true,
-    img: "/src/assets/products/cafe-frappe.png",
+    img: cafeFrappe,
   },
   {
     id: "cafe-chai",
@@ -468,7 +534,7 @@ export const MENU = [
     desc: "Café & té chai.",
     tags: ["Café frío"],
     isVeggie: true,
-    img: "/src/assets/products/chai-coffee.png",
+    img: chaiCoffee,
   },
   {
     id: "cafehelado",
@@ -478,7 +544,7 @@ export const MENU = [
     desc: "Café, milo & helado.",
     tags: ["Café frío"],
     isVeggie: true,
-    img: "/src/assets/products/cafhelado.png",
+    img: cafhelado,
   },
   {
     id: "iced-latte",
@@ -488,7 +554,7 @@ export const MENU = [
     desc: "Espresso doble con leche & hielo.",
     tags: ["Café frío"],
     isVeggie: true,
-    img: "/src/assets/products/iced-latte.png",
+    img: icedLatte,
   },
   {
     id: "prot-recover",
@@ -498,7 +564,7 @@ export const MENU = [
     desc: "Banano & fresa. (+ proteína BiPro opcional)",
     tags: ["Proteína"],
     isVeggie: true,
-    img: "/src/assets/products/proteina-recover-fit.png",
+    img: proteinaRecoverFit,
   },
   {
     id: "prot-passion",
@@ -508,7 +574,7 @@ export const MENU = [
     desc: "Maracuyá & banano. (+ proteína BiPro opcional)",
     tags: ["Proteína"],
     isVeggie: true,
-    img: "/src/assets/products/proteina-passion-whey.png",
+    img: proteinaPassionWhey,
   },
   {
     id: "prot-manipower",
@@ -518,7 +584,7 @@ export const MENU = [
     desc: "Chocolate, banano & mantequilla de maní.",
     tags: ["Proteína"],
     isVeggie: true,
-    img: "/src/assets/products/proteina-manipower.png",
+    img: proteinaManipower,
   },
 
   // ===================== BOWLS DE FRUTA =====================
@@ -530,7 +596,7 @@ export const MENU = [
     desc: "Base de açai con granola, chía, fruta fresca & coco deshidratado.",
     tags: ["Top"],
     isVeggie: true,
-    img: "/src/assets/products/bowl-acai.png",
+    img: bowlAcai,
   },
   {
     id: "rojo-bowl",
@@ -540,7 +606,7 @@ export const MENU = [
     desc: "Frutos Blue con granola, chía & coco deshidratado.",
     tags: [],
     isVeggie: true,
-    img: "/src/assets/products/bowl-rojo.png",
+    img: bowlRojo,
   },
   {
     id: "amarillo-bowl",
@@ -550,6 +616,6 @@ export const MENU = [
     desc: "Frutos Amarillos con granola, chía & coco deshidratado.",
     tags: [],
     isVeggie: true,
-    img: "/src/assets/products/bowl-amarillo.png",
+    img: bowlAmarillo,
   },
 ];
