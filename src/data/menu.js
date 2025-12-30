@@ -44,21 +44,6 @@ import bebidaNaranjaPassion from "@/assets/products/bebida-naranja-passion.png";
 import bebidaTropical from "@/assets/products/bebida-tropical.png";
 import bebidaSpycitrus from "@/assets/products/bebida-spycitrus.png";
 import bebidaAtardecer from "@/assets/products/bebida-atardecer.png";
-import bebidaSuperLight from "@/assets/products/bebida-super-light.png";
-import bebidaAcaiMix from "@/assets/products/bebida-acai-mix.png";
-import bebidaBiche from "@/assets/products/bebida-biche.png";
-
-import sodaMora from "@/assets/products/soda-mora.png";
-import sodaLulo from "@/assets/products/soda-lulo.png";
-
-import cafeFrappe from "@/assets/products/cafe-frappe.png";
-import chaiCoffee from "@/assets/products/chai-coffee.png";
-import cafhelado from "@/assets/products/cafhelado.png";
-import icedLatte from "@/assets/products/iced-latte.png";
-
-import proteinaRecoverFit from "@/assets/products/proteina-recover-fit.png";
-import proteinaPassionWhey from "@/assets/products/proteina-passion-whey.png";
-import proteinaManipower from "@/assets/products/proteina-manipower.png";
 
 import bowlAcai from "@/assets/products/bowl-acai.png";
 import bowlRojo from "@/assets/products/bowl-rojo.png";
@@ -465,7 +450,7 @@ export const MENU = [
     tags: ["Frutal"],
     isVeggie: true,
     img: bebidaAtardecer,
-  },
+  },/*
   {
     id: "frut-super-light",
     category: "bebidas",
@@ -585,7 +570,7 @@ export const MENU = [
     tags: ["Proteína"],
     isVeggie: true,
     img: proteinaManipower,
-  },
+  },*/
 
   // ===================== BOWLS DE FRUTA =====================
   {

@@ -5,6 +5,9 @@ import { formatCOP } from "../../lib/format";
 import { buildSingleProductUrl } from "../../lib/whatsapp";
 import { Leaf, Flame, Sparkles, ArrowRight } from "lucide-react";
 
+// ✅ Nuevo componente
+import SmartImage from "../common/SmartImage";
+
 function CategoryBadge({ category }) {
   const map = {
     bowls: { label: "Bowl", icon: <Sparkles className="h-3 w-3" /> },
@@ -28,10 +31,12 @@ function FallbackBanner({ name }) {
   const initial = (name || "NB").slice(0, 2).toUpperCase();
 
   return (
-    <div className="h-full w-full bg-gradient-to-br from-nb-cream to-white">
+    <div className="relative h-full w-full bg-gradient-to-br from-nb-cream to-white">
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_20%,#8B1E2D_0,transparent_55%)]" />
       <div className="absolute top-3 left-3">
-        <Badge variant="secondary" className="rounded-full">Natural Blends</Badge>
+        <Badge variant="secondary" className="rounded-full">
+          Natural Blends
+        </Badge>
       </div>
       <div className="absolute bottom-3 left-3 flex items-center gap-2">
         <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/80 border text-sm font-semibold text-nb-burgundy">
@@ -53,11 +58,11 @@ export default function ProductCard({ product, onOpen }) {
       {/* Imagen / Banner */}
       <div className="relative h-40 w-full">
         {hasImg ? (
-          <img
+          <SmartImage
             src={product.img}
             alt={product.name}
+            name={product.name}
             className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]"
-            loading="lazy"
           />
         ) : (
           <FallbackBanner name={product.name} />
@@ -73,12 +78,8 @@ export default function ProductCard({ product, onOpen }) {
 
       <CardContent className="space-y-3 p-4">
         <div className="space-y-1">
-          <h3 className="text-base font-semibold leading-tight">
-            {product.name}
-          </h3>
-          <p className="line-clamp-2 text-sm text-nb-ink/70">
-            {product.desc}
-          </p>
+          <h3 className="text-base font-semibold leading-tight">{product.name}</h3>
+          <p className="line-clamp-2 text-sm text-nb-ink/70">{product.desc}</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
